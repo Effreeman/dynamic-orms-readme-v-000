@@ -1,5 +1,5 @@
 module Databaseable
-  
+
   module ClassMethods
     def table_name
       self.to_s.downcase.pluralize
@@ -15,7 +15,7 @@ module Databaseable
         column_names << row["name"]
       end
       column_names.compact
-    end 
+    end
   end
 
   module InstanceMethods
